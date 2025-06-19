@@ -1,0 +1,13 @@
+Básicamente, contamos con dos versiones del script: una para Debian y derivados, y otra especial para Linux Mint, ya que Mint utiliza su propia versión de apt. Sin embargo, si preferimos utilizar la versión común de apt en Mint, debemos apuntar específicamente a /usr/bin/apt.
+
+Para usar cualquiera de los dos scripts, primero debemos moverlo al directorio personal (~/) y luego otorgarle permisos de ejecución con el siguiente comando:
+
+sudo chmod +x nombre_del_script
+
+Opcionalmente, podemos crear un alias para facilitar su uso. Para ello, debemos editar el archivo ~/.bashrc y agregar la siguiente línea en cualquier parte del archivo:
+
+alias nombre_del_alias='~/nombre_del_script'
+
+Una vez guardado el archivo y recargado el entorno (puedes hacer esto cerrando y abriendo la terminal o ejecutando source ~/.bashrc), ya podremos utilizar el alias directamente en la terminal. Por ejemplo, si llamamos al alias actualizar, simplemente escribimos actualizar en la terminal para ejecutar el script.
+
+Cabe destacar que este script también actualiza paquetes instalados mediante Snap y Flatpak. En caso de no tener ninguno instalado, el script simplemente continuará con la siguiente tarea sin errores. Por eso, es recomendable dejar estas secciones en el script, ya que podrían ser útiles en el futuro si llegamos a instalar Snap o Flatpak, evitando así tener que modificar el script nuevamente.
