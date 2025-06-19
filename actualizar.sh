@@ -37,7 +37,7 @@ sudo snap refresh
 flatpak update -y
 
 
-#esta parte del escrip es inecesario, ya que repite lo que esta mas arriba, pero yo lo vuelvo a repetir por las dudas
+#Esta parte del script puede parecer innecesaria, ya que repite lo que se ejecuta más arriba. Sin embargo, se incluye nuevamente por precaución, para asegurar que el proceso se complete correctamente en todos los casos.
 
 
 # Limpiar paquetes innecesarios
